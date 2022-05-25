@@ -3,6 +3,9 @@
     padding: 0;
 }
 
+ul {
+    list-style: none;
+}
 @font-face {
     font-family: 'THARWATEMARARUQAALIGHT2';
     src: url('./fonts/THARWATEMARARUQAALIGHT2.eot'); /* IE9 Compat Modes */
@@ -35,14 +38,14 @@ body {
             display: flex;
             justify-content: flex-start;
             align-items: center;
-            margin-bottom: 90px;
-            margin-top: 50px;
+            margin-bottom: 70px;
+            margin-top: 30px;
         }
         &-stillWorking {
             font-family: 'THARWATEMARARUQAALIGHT2', sans-serif;
             font-size:36px;
             color: #00AB67;
-            margin-bottom: 3rem;
+            margin-bottom: 2rem;
         }
 
 
@@ -104,7 +107,10 @@ body {
         }
     }
     &-forming {
-        width: 70%;
+        width: 85%;
+        @media (min-width:1441px) {
+            width: 70%;
+        }
     }
     &-soonImage {
         // flex: 1;
@@ -149,6 +155,27 @@ select {
 }
 
 
-ul {
-    list-style: none;
+@media (min-width: 768px) and (max-width:1023px) {
+    .comingSoon {
+        &-soonText {
+            width: 65%;
+            &-logo {
+                margin-bottom: 20px;
+                margin-top: 10px;
+            }
+            &-stillWorking {
+                font-size: 30px;
+                margin-bottom: 1rem;
+            }
+        }
+        &-soonImage {
+            width: 35%;
+        }
+        &-forming {
+            width: 90%;
+            .registeration {
+                padding: 20px 10px;
+            }
+        }
+    }
 }

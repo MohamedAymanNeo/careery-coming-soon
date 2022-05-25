@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+ul {
+  list-style: none;
+}
+
 @font-face {
   font-family: 'THARWATEMARARUQAALIGHT2';
   src: url("./fonts/THARWATEMARARUQAALIGHT2.eot");
@@ -55,15 +59,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 90px;
-  margin-top: 50px;
+  margin-bottom: 70px;
+  margin-top: 30px;
 }
 
 .comingSoon-soonText-stillWorking {
   font-family: 'THARWATEMARARUQAALIGHT2', sans-serif;
   font-size: 36px;
   color: #00AB67;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .comingSoon-socialContent {
@@ -142,7 +146,13 @@ body {
 }
 
 .comingSoon-forming {
-  width: 70%;
+  width: 85%;
+}
+
+@media (min-width: 1441px) {
+  .comingSoon-forming {
+    width: 70%;
+  }
 }
 
 .comingSoon-soonImage {
@@ -191,7 +201,26 @@ select {
   height: 50px !important;
 }
 
-ul {
-  list-style: none;
+@media (min-width: 768px) and (max-width: 1023px) {
+  .comingSoon-soonText {
+    width: 65%;
+  }
+  .comingSoon-soonText-logo {
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  .comingSoon-soonText-stillWorking {
+    font-size: 30px;
+    margin-bottom: 1rem;
+  }
+  .comingSoon-soonImage {
+    width: 35%;
+  }
+  .comingSoon-forming {
+    width: 90%;
+  }
+  .comingSoon-forming .registeration {
+    padding: 20px 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
