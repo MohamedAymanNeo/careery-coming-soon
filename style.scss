@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'THARWATEMARARUQAALIGHT2';
+    src: url('./fonts/THARWATEMARARUQAALIGHT2.eot'); /* IE9 Compat Modes */
+    src: url('./fonts/THARWATEMARARUQAALIGHT2.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('./fonts/THARWATEMARARUQAALIGHT2.woff') format('woff'), /* Modern Browsers */
+            url('./fonts/THARWATEMARARUQAALIGHT2.ttf')  format('truetype'), /* Safari, Android, iOS */
+            url('./fonts/THARWATEMARARUQAALIGHT2.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+body {
+    overflow: hidden;
+}
+.comingSoon {
+    height: 100vh;
+    position: relative;
+    box-shadow: 6px -6px 12px 3px #a0a0a033;
+    background: #F6F6F6;
+    width: 100%;
+    // margin: 100px auto;
+    display: flex;
+    &-soonText {
+        padding: 20px 15px;
+        // flex: 1;
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        &-logo {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 90px;
+            margin-top: 50px;
+        }
+        &-stillWorking {
+            font-family: 'THARWATEMARARUQAALIGHT2', sans-serif;
+            font-size:36px;
+            color: #00AB67;
+            margin-bottom: 3rem;
+        }
+
+
+    }
+    &-socialContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        h6 {
+            font-size: 26px;
+            margin-bottom: 20px;
+            font-family: 'THARWATEMARARUQAALIGHT2', sans-serif;
+        }
+        .socialList {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            // @media (min-width: 768px) {
+            //     justify-content: space-between;
+            // }
+            li {
+                margin: 0 5px;
+                a {
+                    i {
+                        font-size: 22px;
+                        color: gray;
+                        background: white;
+                        padding: 15px;
+                        border-radius: 50%;
+                        display: inline-block;
+                        opacity: 0.5;
+                        box-shadow: 6px -6px 12px 3px #a0a0a033;
+                        transition: all .3s ease-in-out;
+                        &:hover {
+                            // color: white;
+                            // background: #5ae4a8;
+                            opacity: 1;
+                        }
+                    }
+                    img {
+                        width: 50px;
+                        height: 50px;
+                        background: white;
+                        padding: 5px;
+                        border-radius: 50%;
+                        display: inline-block;
+                        box-shadow: 6px -6px 12px 3px #a0a0a033;
+                        opacity: 0.5;
+                        transition: all .3s ease-in-out;
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-forming {
+        width: 70%;
+    }
+    &-soonImage {
+        // flex: 1;
+        width: 25%;
+        background: #00AB67;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+        }
+    }
+    
+}
+.registeration {
+    .form-control {
+        border-radius: 50px;
+        height: 50px;
+        text-align: right;
+    }
+    padding: 40px 20px;
+    .registerBtn {
+        outline: none;
+        border: none;
+        background: #5ae4a8;
+        min-width: 150px;
+        padding: 10px 0;
+        border-radius: 50px;
+        color: #1a2e35;
+        letter-spacing: 1px;
+        font-size: 20px;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            background:#1a2e35 ;
+            color: #5ae4a8;
+            cursor: pointer;
+        }
+    }
+}
+
+select {
+    height: 50px !important;
+}
+
+
+ul {
+    list-style: none;
+}
